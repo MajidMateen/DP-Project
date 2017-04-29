@@ -11,7 +11,7 @@ public class ChickenTikka implements Chain{
 	
 	public void calculate(PizzaSelector request)
 	{
-		if(Objects.equals(request.getCalcMethod(), "chickentikka"))
+		if(Objects.equals(request.flavor(), "chickentikka"))
 		{
 			System.out.println("chicken tikka pizza Price:400.00");
 			
