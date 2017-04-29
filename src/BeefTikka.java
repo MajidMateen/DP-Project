@@ -10,7 +10,7 @@ public class BeefTikka implements Chain {
 
 	public void calculate(PizzaSelector request) {
 		
-		if (Objects.equals(request.getCalcMethod(), "beeftikka")) {
+		if (Objects.equals(request.flavor(), "beeftikka")) {
 			System.out.println("beef tikka pizza Price:600.00");
 
 		} 
