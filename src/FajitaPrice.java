@@ -1,3 +1,4 @@
+import java.util.Objects;
 
 public class FajitaPrice implements Chain {
 
@@ -7,11 +8,13 @@ public class FajitaPrice implements Chain {
 		nextInChain = nextChain;
 	}
 
-	public void calculate(PizzaSelector request) {
-		if (request.getCalcMethod() == "fajita pizza") {
+	public void calculate(PizzaSelector request)
+	{
+		if (Objects.equals(request.getCalcMethod(), "chickentikka")) {
 			System.out.println("fajita pizza Price:200.00");
 
-		} else
+		}
+		else
 			nextInChain.calculate(request);
 
 	}

@@ -1,3 +1,4 @@
+import java.util.Objects;
 
 public class ChickenTikka implements Chain{
 	
@@ -10,7 +11,7 @@ public class ChickenTikka implements Chain{
 	
 	public void calculate(PizzaSelector request)
 	{
-		if(request.getCalcMethod()=="chicken tikka")
+		if(Objects.equals(request.getCalcMethod(), "chickentikka"))
 		{
 			System.out.println("chicken tikka pizza Price:400.00");
 			
