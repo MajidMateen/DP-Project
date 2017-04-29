@@ -10,7 +10,7 @@ public class FajitaPrice implements Chain {
 
 	public void calculate(PizzaSelector request)
 	{
-		if (Objects.equals(request.getCalcMethod(), "chickentikka")) {
+		if (Objects.equals(request.flavor(), "fajitapizza")) {
 			System.out.println("fajita pizza Price:200.00");
 
 		}

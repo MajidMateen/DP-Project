@@ -51,8 +51,9 @@ public class Customer {
 
 			chainCallFajita.setNextChain(chainCallTikka);
 			chainCallTikka.setNextChain(chainCallBeef);
+		
 
-			PizzaSelector ps = new PizzaSelector("SmallPizza", "chickentikka");
+			PizzaSelector ps = new PizzaSelector("SmallPizza", "fajitapizza");
 
 			chainCallFajita.calculate(ps);
 		}

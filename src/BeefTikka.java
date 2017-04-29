@@ -15,7 +15,7 @@ public class BeefTikka implements Chain {
 
 		} 
 		else
-			nextInChain.calculate(request);
+		  System.out.println("request cannot be handled");
 
 	}
 
